@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CategoryHeaderView" customModule="ExapandableTableView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="96"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="c5n-Dn-Gda">
+                    <rect key="frame" x="16" y="44" width="350" height="32"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2O5-xe-M1B">
+                            <rect key="frame" x="0.0" y="0.0" width="303" height="32"/>
+                            <color key="backgroundColor" red="0.67278467465753422" green="0.5448683647260274" blue="0.72709760273972601" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="aIf-Js-Hfu"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="▽" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YS8-OL-47T">
+                            <rect key="frame" x="303" y="0.0" width="47" height="32"/>
+                            <color key="backgroundColor" red="0.67278467470000003" green="0.5448683647" blue="0.72709760270000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="1da-i3-UG2"/>
+                                <constraint firstAttribute="width" constant="47" id="ehe-dc-3ag"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.37875789403915405" green="0.8815038800239563" blue="0.90686196088790894" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="c5n-Dn-Gda" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="T2v-Kh-a4l"/>
+                <constraint firstItem="c5n-Dn-Gda" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" id="aDr-5T-EFN"/>
+                <constraint firstAttribute="trailingMargin" secondItem="c5n-Dn-Gda" secondAttribute="trailing" id="lbJ-yd-iRL"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="arrowLabel" destination="YS8-OL-47T" id="Tw5-Tw-XTi"/>
+                <outlet property="titleLabel" destination="2O5-xe-M1B" id="HIO-rS-orZ"/>
+            </connections>
+            <point key="canvasLocation" x="-156.52173913043478" y="-285.26785714285711"/>
+        </view>
+    </objects>
+</document>
